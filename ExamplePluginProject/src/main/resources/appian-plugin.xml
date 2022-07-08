@@ -1,0 +1,38 @@
+<appian-plugin name="My Plugin Display Name" key="org.appiansc.plugins.mypluginkey">
+
+  <plugin-info>
+    <description>My Plugin Description</description>
+    <vendor name="Appian Corporation" url="http://www.appian.com"/>
+    <version>1.0.0</version>
+    <application-version min="22.2"/>
+  </plugin-info>
+
+  <enumeration key="listOfStringItems" type="3">
+    <items>
+      <item>
+        <label>Item 2</label>
+        <detail>Tooltip for item 2</detail>
+        <value>String value for item 2</value>
+      </item>
+      <item>
+        <label>Item 1</label>
+        <detail>Tooltip for item 1</detail>
+        <value>String value for item 1</value>
+      </item>
+    </items>
+  </enumeration>
+
+  <datatype key="MyPluginDatatypes" name="My Plugin Data Types">
+    <class>org.appiansc.plugins.mypluginkey.datatypes.ExampleDatatype</class>
+  </datatype>
+
+  <function-category key="myPluginCategory" name="My Plugin Functions"/>
+
+  <function key="ExampleExpressionFunction"
+            class="org.appiansc.plugins.mypluginkey.expressions.ExampleExpressionFunction"/>
+
+  <smart-service name="Example Smart Service"
+                 key="ExampleSmartService"
+                 class="org.appiansc.plugins.mypluginkey.smartservices.ExampleSmartService"/>
+
+</appian-plugin>
